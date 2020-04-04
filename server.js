@@ -4,14 +4,12 @@ const app = express();
 const port = 3000;
 
 const mongoose = require('mongoose');
-mongoose.connect('mongodb+srv://obamachair:eCqbW4T51YXEbk8H@cluster0-i12e4.mongodb.net/todolistDB', { useNewUrlParser: true, useUnifiedTopology: true });
-
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static('public'));
 app.set('view engine', 'ejs');
 
-mongoose.connect('mongodb://localhost:27017/ShopListDB', { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect('mongodb+srv://obamachair:eCqbW4T51YXEbk8H@cluster0-i12e4.mongodb.net/todolistDB', { useNewUrlParser: true, useUnifiedTopology: true });
 
 const itemSchema = {
     name: String
