@@ -61,6 +61,6 @@ app.post('/delete', (req, res) => {
     });
 });
 
-app.listen(3000, ()=>{
-    console.log("Server is running on port " + port);    
+app.listen(process.env.PORT || port, function(){
+    console.log("Server is running on port " + port);
 })
