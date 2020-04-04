@@ -10,8 +10,7 @@ app.use(express.static('public'));
 app.set('view engine', 'ejs');
 
 //mongoose.connect('mongodb://localhost:27017/todolistDB', { useNewUrlParser: true, useUnifiedTopology: true });
-mongoose.connect('mongodb+srv://obamachair:4p5HIpjFJ8DTv0RoH@cluster0-i12e4.mongodb.net/todolistDB', { useNewUrlParser: true, useUnifiedTopology: true });
-//mongoose.connect('mongodb+srv://obamachair:4p5HIpjFJ8DTv0Ro@cluster0-i12e4.mongodb.net/test?retryWrites=true&w=majority', { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect('mongodb+srv://obamachair:pleasework@cluster0-i12e4.mongodb.net/todolistDB', { useNewUrlParser: true, useUnifiedTopology: true });
 
 const itemSchema = {
     name: String
